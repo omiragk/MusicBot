@@ -122,7 +122,6 @@ async def song(client, message):
                  performer=str(rip_data["uploader"]))  #JEBotZ
         await rkp.delete()
         os.system("rm -rf *.mp3")
-        os.system("rm -rf *.webp")
   
     
 @Jebot.on_message(filters.command("song") & ~filters.edited & filters.group)
